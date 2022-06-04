@@ -1,0 +1,13 @@
+.minDash{
+   margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 70px;
+}
+@media screen and (max-width:768px){
+    .minDash{
+        align-items: center;
+        gap: 29px;
+    }
+}

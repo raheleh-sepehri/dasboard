@@ -1,0 +1,113 @@
+.compactCard{
+    display: flex;
+    flex:1;
+    height: 7rem;
+    border-radius: .7rem;
+    -webkit-border-radius: .7rem;
+    -moz-border-radius: .7rem;
+    -ms-border-radius: .7rem;
+    -o-border-radius: .7rem;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    padding: 2rem;
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+}
+.compactCard:hover{
+    box-shadow: none !important;
+}
+.raidialBar{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.CircularProgressbar{
+    width: 5rem !important;
+    overflow: visible;
+}
+.CircularProgressbar .CircularProgressbar-path{
+    stroke: white !important;
+    stroke-width: 12px !important;
+    filter: drop-shadow(2px 4px 6px white);
+    -webkit-filter: drop-shadow(2px 4px 6px white);
+}
+.CircularProgressbar .CircularProgressbar-trail {
+    stroke: none;
+
+}
+.CircularProgressbar .CircularProgressbar-text{
+    fill: white;
+    font-weight: bolder;
+
+}
+.detail{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    
+}
+.detail>:nth-child(2){
+    font-size: 22px;
+    font-weight: bolder;
+}
+.detail>:nth-child(3){
+    font-size: 12px;
+}
+/* expendedCard */
+.expendedCard{
+    position: absolute;
+    width: 60%;
+    height: 70vh;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: .7rem;
+    -webkit-border-radius: .7rem;
+    -moz-border-radius: .7rem;
+    -ms-border-radius: .7rem;
+    -o-border-radius: .7rem;
+    padding: .5rem .5rem;
+    top: 10.7rem ;
+    left: 14.2rem ;
+}
+.close-icon{
+    align-self: flex-end;
+    cursor: pointer;
+    color: white;
+    font: border;
+}
+.expendedCard span:nth-of-type(1){
+    color: white;
+    font-size: 26px;
+    font: bold;
+    text-shadow: 0px 0px 15px white;
+}
+.expendedCard span:nth-of-type(2){
+    color: rgb(227, 227, 227);
+    font-size: 6px;
+}
+.chartContainer{
+    width: 70%;
+}
+@media screen and (max-width:1200px) {
+   .expendedCard{
+    top: 8rem ;
+    left: 10rem ;
+   } 
+}
+@media screen and (max-width:768px){
+    .expendedCard{
+        width: 80%;
+       left: 35px;
+    }
+ 
+}

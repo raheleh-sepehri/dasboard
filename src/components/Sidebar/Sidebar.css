@@ -1,0 +1,121 @@
+.bars{
+    display: none;
+}
+.sidebr{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+.logo{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+
+    box-sizing: border-box;
+}
+.logo>img{
+    width: 3rem;
+    height: 3rem;
+  
+}
+.logo>span{
+    font-weight: bold;
+    font-size: 22px;
+}
+.logo>span>span{
+    color: var(--pink);
+}
+.menu>ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+
+
+}
+.menu{
+    width: 100%;
+    margin-top: 3rem;
+}
+.menu>ul>li{
+    padding: 5px 15px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    -ms-border-radius: 0 5px 5px 0;
+    -o-border-radius: 0 5px 5px 0;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    font-size: 14px;
+    width: 9rem;
+  
+}
+
+.active{
+    background: var(--activeItem);
+    border-left: 6px solid var(--pink);
+
+}
+@media screen and (max-width:1200px) {
+    .logo{
+        display: none;
+    }
+    .menu>ul>li{
+        padding:5px 0px 5px 5px;
+        gap: .5rem;
+        width: 8rem;
+    }
+}
+@media screen and (max-width:768px){
+.sidebr{
+    position: fixed;
+    z-index: 9;
+    background: #ffe0e0;
+    width: 50%;
+    padding-right: 1rem;
+    height: 100%;
+}
+.logo{
+    display: flex;
+}
+.menu {
+    margin-top: 0;
+}
+.menu ul:last-child{
+    position: relative;
+    margin-top: 2rem;
+}
+.menu>ul>li{
+    margin-bottom: 1rem;
+}
+.bars{
+    display: flex;
+    position: absolute;
+    top: 2rem;
+    z-index: 9;
+    background: #ffe0e0;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+}
+

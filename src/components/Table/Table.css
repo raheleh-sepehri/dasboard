@@ -1,0 +1,63 @@
+.table{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: -30px;
+}
+.MuiPaper-root *{
+    padding: 10px;
+}
+.css-1ygcj2i-MuiTableCell-root{
+    font-weight: bold !important;
+}
+.Table>tr> td ,th{
+    border: none!important;
+}
+.css-1ex1afd-MuiTableCell-root{
+    border: none !important;
+}
+.css-11xur9t-MuiPaper-root-MuiTableContainer-root{
+    border-radius: .7rem !important;
+    -webkit-border-radius: .7rem !important;
+    -moz-border-radius: .7rem !important;
+    -ms-border-radius: .7rem !important;
+    -o-border-radius: .7rem !important;
+    height: 65%
+}
+
+.detail-orders{
+    color: #00b5ff !important;
+    cursor: pointer;
+}
+.css-1ex1afd-MuiTableCell-root{
+    line-height: 1 !important;
+    padding: 6px 16px !important; 
+}
+.status{
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    min-width: 4rem;
+    max-width: 4rem;
+    width: 4rem;
+    display: block;
+    text-align: center;
+}
+@media screen and (max-width:1200px) {
+    .table{
+        width: 170%;
+        
+    }
+}
+@media screen and (max-width:768px){
+    .table{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18rem;
+    margin-top: 20px;
+    }
+}
